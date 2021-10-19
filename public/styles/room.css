@@ -1,0 +1,130 @@
+.container {
+    max-width: min(112rem, 90%);
+}
+#room header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#room header .buttons {
+    display: flex;
+}
+#room header .buttons .button:nth-child(1){
+    margin-right: 0.8rem;
+    padding: 1.3rem 1.6rem;
+}
+#room header button {
+    margin-right: 0.8rem;
+    padding: 1.3rem 3.2rem;
+}
+#room header .buttons .button i { 
+        margin: 0 0 0 1.16rem;
+    
+}
+#room header .buttons button i {
+    margin: 0 1.16rem 0 0;
+}
+
+/*** Question Form ***/ 
+
+#question-form h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: var(--black);
+    line-height: 4.2rem;
+    margin-bottom: 2rem;
+}
+#question-form form {
+    border: .2rem solid var(--grey-blue);
+    border-radius: 0 .8rem .8rem .8rem;
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+#question-form form textarea {
+    resize: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+#question-form form textarea::placeholder {
+    color: var(--grey-blue);
+    font-family: 'Open Sans', sans-serif;
+}
+#question-form form footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#question-form form footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--icons-details);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+}
+#question-form form footer > div i {
+    margin-right: .9rem;
+}
+#question-form form footer button {
+    height: auto;
+    padding: .8rem 2.4rem;
+    line-height: 2.4rem;
+} 
+
+/* Questions */
+
+#questions .question-wrapper {
+    background: var(--light-blue);
+    margin-bottom: .8rem;
+    border-radius: 0 .8rem .8rem .8rem;
+    padding: 2.4rem;
+}
+#questions .question-wrapper .question-content {
+    display: flex;
+    align-items: flex-start;
+}
+#questions .question-wrapper .question-content .user {
+    font-size: 5rem;
+    color: var(--blue);
+}
+#questions .question-wrapper .question-content p {
+    margin-left: 1.6rem;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.2rem;
+}
+#questions .question-wrapper .actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#questions .question-wrapper .actions > a:nth-child(2){
+    display: flex;
+    align-items: center;
+    color: var(--grey-dark);
+    margin-left: 2.9rem;
+}
+#questions .question-wrapper .actions > a > i {
+    margin-right: .8rem;
+}
+#questions .question-wrapper .actions a .fas.fa-check {
+    color: var(--blue);
+}
+#questions .question-wrapper .actions a .fas.fa-trash {
+    color: var(--red);
+}
+
+/* Question Reads */
+
+#questions .question-wrapper.read {
+    background:var(--grey-medium);
+}
+#questions .question-wrapper.read .user {
+    color: var(--grey-blue);
+}
